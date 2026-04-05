@@ -1,0 +1,13 @@
+﻿MORPION(id_morpion, nom, image, pv, attaque, mana, reussite)
+
+EQUIPE(id_equipe, nom, couleur, date_creation)
+
+COMPOSER(id_equipe_morpion, #id_equipe, #id_morpion)
+
+CONFIGURATION(id_config, date_config, taille_grille, max_tours)
+
+PARTIE(id_partie, date_debut, date_fin, gagnante, #id_config)
+
+PARTICIPATION(#id_partie, #id_equipe)
+
+JOURNAL(#id_partie, id_ligne, new_ligne, new_colonne,# id_morpion, #id_equipe, date_action, texte)
