@@ -1,10 +1,10 @@
-# 🎮 Morpion RPG
+# Morpion RPG
 
 Un jeu de Morpion (Tic-Tac-Toe) revisité avec des mécaniques RPG, développé dans le cadre de l'UE INF2028L. Chaque case de la grille est occupée par un **personnage** doté de statistiques (PV, Attaque, Mana, Réussite), et deux équipes s'affrontent en mode normal ou avancé.
 
 ---
 
-## 📋 Table des matières
+## Table des matières
 
 - [Fonctionnalités](#-fonctionnalités)
 - [Architecture du projet](#-architecture-du-projet)
@@ -17,7 +17,7 @@ Un jeu de Morpion (Tic-Tac-Toe) revisité avec des mécaniques RPG, développé 
 
 ---
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
 - **Gestion des équipes** — Créez vos équipes et choisissez les morpions (personnages) qui les composent parmi 16 disponibles.
 - **Mode Normal** — Morpion classique sur grille 3×3 ou 4×4, deux équipes s'affrontent tour par tour.
@@ -63,7 +63,7 @@ Morpion/
 
 ---
 
-## 🗃 Modèle de données
+## Modèle de données
 
 Le schéma PostgreSQL (`tictac2`) contient les tables suivantes :
 
@@ -95,7 +95,7 @@ psql -U <votre_utilisateur> -d <votre_base> -f Script.sql
 
 ---
 
-## 🔧 Prérequis
+## Prérequis
 
 - **Python** ≥ 3.11.2
 - **PostgreSQL** accessible (serveur local ou distant)
@@ -103,7 +103,7 @@ psql -U <votre_utilisateur> -d <votre_base> -f Script.sql
 
 ---
 
-## 🚀 Installation
+## Installation
 
 **1. Créer et activer l'environnement virtuel** (depuis le répertoire `bdw-server`) :
 
@@ -131,7 +131,7 @@ Les dépendances sont : `psycopg[binary]`, `logzero`, `Jinja2`.
 
 ---
 
-## ⚙️ Configuration de la base de données
+## Configuration de la base de données
 
 Copiez et adaptez le fichier `config-bd.toml` à la racine de `bdw-server` :
 
@@ -145,7 +145,7 @@ POSTGRESQL_SCHEMA   = "tictac2"
 
 ---
 
-## ▶️ Lancement
+## Lancement
 
 Depuis le répertoire `bdw-server`, avec l'environnement virtuel activé :
 
@@ -165,7 +165,7 @@ L'application est alors accessible à l'adresse : [http://localhost:4242](http:/
 
 ---
 
-## 🗺 Pages et routes
+## Pages et routes
 
 | URL | Description |
 |---|---|
